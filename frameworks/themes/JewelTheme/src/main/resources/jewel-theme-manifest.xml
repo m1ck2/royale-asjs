@@ -19,7 +19,5 @@
 -->
 
 <componentPackage>
-
-    <component id="JewelThemeFontInject" class="org.apache.royale.jewel.JewelThemeFontInject"/>
     
 </componentPackage>
