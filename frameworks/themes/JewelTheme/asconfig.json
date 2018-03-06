@@ -29,6 +29,6 @@
         "include-sources": [
             "src/main/royale"
         ],
-        "output": "target/JewelThemeClasses.swc"
+        "output": "target/JewelTheme.swc"
     }
 }

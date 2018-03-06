@@ -21,13 +21,28 @@ package
 
     /**
      *  @private
-     *  This class is used to link additional classes into jeweltheme.swc
+     *  This class is used to link additional classes into JewelTheme.swc
      *  beyond those that are found by dependecy analysis starting
      *  from the classes specified in manifest.xml.
      */
     internal class JewelThemeClasses
     {
-        
+        /**
+         *  constructor.
+         *
+		 * <inject_html>
+		 * <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+     	 * </inject_html>
+	 	 * 
+         *  @langversion 3.0
+         *  @playerversion Flash 10.2
+         *  @playerversion AIR 2.6
+         *  @productversion Royale 0.9.2
+         */
+		public function JewelThemeClasses()
+		{
+            super();
+        }
     }
 
 }
