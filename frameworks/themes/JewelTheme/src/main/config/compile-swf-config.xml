@@ -66,6 +66,17 @@
         <locale/>
         
         <library-path/>
+
+        <namespaces>
+            <namespace>
+                <uri>library://ns.apache.org/royale/jewel</uri>
+                <manifest>../resources/jewel-theme-manifest.xml</manifest>
+            </namespace>
+            <namespace>
+                <uri>library://ns.apache.org/royale/jewel</uri>
+                <manifest>../resources/jewel-theme-as-manifest.xml</manifest>
+            </namespace>
+        </namespaces>
         
         <source-path>
             <path-element>../royale</path-element>

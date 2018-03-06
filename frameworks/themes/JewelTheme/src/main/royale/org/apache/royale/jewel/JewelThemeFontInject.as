@@ -16,20 +16,30 @@
 //  limitations under the License.
 //
 ////////////////////////////////////////////////////////////////////////////////
-package
+package org.apache.royale.jewel
 {
 
     /**
      *  @private
-     *  This class is used to link additional classes into JewelTheme.swc
-     *  beyond those that are found by dependecy analysis starting
-     *  from the classes specified in manifest.xml.
+     *  This class is used to link the font in html
      */
-    internal class JewelThemeClasses
+    public class JewelThemeFontInject
     {
-        COMPILE::JS
-	    {
-            import org.apache.royale.jewel.JewelThemeFontInject; JewelThemeFontInject;
+        /**
+         *  constructor.
+         *
+		 * <inject_html>
+		 * <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+     	 * </inject_html>
+	 	 * 
+         *  @langversion 3.0
+         *  @playerversion Flash 10.2
+         *  @playerversion AIR 2.6
+         *  @productversion Royale 0.9.2
+         */
+		public function JewelThemeFontInject()
+		{
+            super();
         }
     }
 
