@@ -71,6 +71,7 @@
     <module>DataBindingExampleWithFlexLayout</module>
     <module>DragAndDropExample</module>
     <module>AlertExample</module>
+    <module>JewelExample</module>
   </modules>
 
   <build>
