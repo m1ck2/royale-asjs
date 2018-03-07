@@ -35,6 +35,10 @@ limitations under the License.
 		<js:VerticalLayoutWithPaddingAndGap gap="10"/>
 	</js:beads>
 	
+	<js:Button/>
+	<js:TextButton text="Basic"/>
+
+	<j:Button/>
 	<j:TextButton text="C"/>
 
 	<js:Spacer height="30"/>

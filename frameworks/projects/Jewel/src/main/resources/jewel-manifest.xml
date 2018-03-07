@@ -22,6 +22,7 @@
 <componentPackage>
 
     <component id="Application" class="org.apache.royale.jewel.Application"/>
+    <component id="Button" class="org.apache.royale.jewel.Button"/>
     <component id="TextButton" class="org.apache.royale.jewel.TextButton"/>
     <component id="TextField" class="org.apache.royale.jewel.TextField"/>
     <component id="Slider" class="org.apache.royale.jewel.Slider"/>

@@ -18,38 +18,48 @@
 ////////////////////////////////////////////////////////////////////////////////
 package org.apache.royale.jewel
 {
-    import org.apache.royale.html.TextButton;
-   
+    import org.apache.royale.html.Button;
+
     COMPILE::JS
     {
         import org.apache.royale.core.WrappedHTMLElement;
         import org.apache.royale.html.util.addElementToWrapper;
     }
-    
+
     /**
-     *  The Button class provides a Jewel Design Library UI-like appearance for
-     *  a Button.
-     *
+     *  The Button class is a simple button.  Use TextButton for
+     *  buttons that should show text.  This is the lightest weight
+     *  button used for non-text buttons like the arrow buttons
+     *  in a Scrollbar or NumericStepper.
+     * 
+     *  The most common view for this button is CSSButtonView that
+     *  allows you to specify a backgroundImage in CSS that defines
+     *  the look of the button.
+     * 
+     *  However, when used in ScrollBar and when composed in many
+     *  other components, it is more common to assign a custom view
+     *  to the button.  
+     *  
      *  @langversion 3.0
      *  @playerversion Flash 10.2
      *  @playerversion AIR 2.6
-     *  @productversion Royale 0.9.2
+     *  @productversion Royale 0.0
      */
-	public class TextButton extends org.apache.royale.html.TextButton
+    public class Button extends org.apache.royale.html.Button
 	{
         /**
          *  Constructor.
-         *
+         *  
          *  @langversion 3.0
          *  @playerversion Flash 10.2
          *  @playerversion AIR 2.6
-         *  @productversion Royale 0.9.2
+         *  @productversion Royale 0.0
          */
-		public function TextButton()
+		public function Button()
 		{
 			super();
 		}
-        
+
         /**
 		 * @private
 		 * @royaleignorecoercion org.apache.royale.core.WrappedHTMLElement
@@ -59,7 +69,7 @@ package org.apache.royale.jewel
 		{
 			addElementToWrapper(this,'button');
             element.setAttribute('type', 'button');
-			typeNames = "jewel textbutton";
+			typeNames = "jewel button";
 			return element;
 		}
 	}

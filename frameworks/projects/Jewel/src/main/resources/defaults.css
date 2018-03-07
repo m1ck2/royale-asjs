@@ -31,14 +31,6 @@ TextField {
 .vTextField--label {}
 
 /*
-* Jewel TextButton
-*/
-TextButton {
-}
-TextButton:hover {}
-TextButton:active {}
-
-/*
 * Jewel Slider
 */
 Slider {

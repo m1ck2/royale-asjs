@@ -65,6 +65,10 @@
               <path>../src/main/resources/defaults.css</path>
             </include-file>
             <include-file>
+              <name>Button.css</name>
+              <path>../src/main/resources/Button.css</path>
+            </include-file>
+            <include-file>
               <name>TextButton.css</name>
               <path>../src/main/resources/TextButton.css</path>
             </include-file>
