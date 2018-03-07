@@ -27,15 +27,19 @@
 	cursor:pointer;
 	
 	/* Background: */
-	border:1px; /*without this svg shows scaled and bigger*/
-	border-image-source: url(assets/JewelButton2.svg) ;
+	border: none;
+	border-radius: 3px;
+
+	/*border:1px;*/ /*without this svg shows scaled and bigger*/
+	/*border-image-source: url(assets/jewel-button.svg) ;
 	border-image-slice: 4;
-	border-image-width: 4;
+	border-image-width: 4;*/
 	
-	background-image: linear-gradient(#3BB0FF, #1E36FA);
+	/*background-image: linear-gradient(#3BB0FF, #1E36FA);*/
+	/*background-color: #006CEB;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-clip: padding-box;
+	background-clip: padding-box;*/
 
 	/* TextField: */
 	font-family: 'Lato-Bold', sans-serif;
@@ -44,7 +48,9 @@
 	color: #fff;
 	text-shadow: 0 1px 0 #555;
 
-	padding: 10px 32px;
+	padding: 10px 0px;
+	display:inline-block;
+	min-width: 80px;
 
 	/*background: url(assets/4slicewithpattern.svg);
 	background-size: cover;
@@ -57,7 +63,15 @@
 	*/
 }
 
+.textbutton {
+	background-color: #006CEB;
+	transition-duration: 0.4s;
+}
+
 .textbutton:hover {
+	background-color: #3389EF;
+	
+	/* button/large: */
 	/*background: linear-gradient(#FD9958, #F76943);
 	border: 1px solid #BC573C;
 	line-height:16px;
@@ -65,9 +79,18 @@
 }
 
 .textbutton:active {
+	background-color: #0056BC;
+	
 	/*box-shadow: #E6431D 0 1px 0 inset;
 	text-shadow: 0 -1px 0 #5F3A29;*/
 }
 .textbutton:focus {
 	outline: 0;
+}
+
+.textbutton[disabled] {
+	background-color: #CCCCCC;
+	color: #888;
+	text-shadow: unset;
+	cursor: unset;
 }

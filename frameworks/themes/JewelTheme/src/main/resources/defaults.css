@@ -20,17 +20,15 @@
  @namespace j "library://ns.apache.org/royale/jewel";
  @namespace "http://www.w3.org/1999/xhtml";
 
- .royale *, . royale *:before, . royale *:after {
+ .royale *, .royale *:before, .royale *:after {
 	 -moz-box-sizing: border-box;
 	 -webkit-box-sizing: border-box;
 	 box-sizing: border-box;
-
 	/* fonts: ClassReference("org.apache.royale.jewel.JewelThemeFontInject"); */
  }
- 
- .page-content
- {
-	 padding: 10px;
-	 margin: 10px;
+
+ .royale {
+	padding: 10px;
+	margin: 10px;
  }
  

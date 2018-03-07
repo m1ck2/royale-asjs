@@ -41,17 +41,20 @@ limitations under the License.
 	<j:Button/>
 	<j:TextButton text="C"/>
 
-	<js:Spacer height="30"/>
-
 	<j:TextButton text="Button"/>
 
 	<j:TextButton text="Button With More Text"/>
 
-	<j:TextButton id="button1" text="Button" width="120" height="40"/>
+	<j:TextButton text="Button" width="120" height="40"/>
 
 	
-	<j:TextButton id="button2" text="Button"/>
+	<j:TextButton text="Button"/>
 
+	<j:TextButton text="Disabled">
+		<j:beads>
+			<j:Disabled/>
+		</j:beads>
+	</j:TextButton>
 	
 
 	<j:Slider id="slider" width="250" value="420" minimum="50" maximum="500"

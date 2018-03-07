@@ -32,6 +32,12 @@
 
   <name>Apache Royale: Examples: Royale: JewelExample</name>
 
+  <properties>
+    <!-- Customize Jewel colors  -->
+    <primary>red</primary>
+    <secondary>grey</secondary>
+  </properties>
+
   <build>
     <sourceDirectory>src/main/royale</sourceDirectory>
     <plugins>

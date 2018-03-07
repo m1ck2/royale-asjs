@@ -29,9 +29,9 @@
 		<js:SimpleCSSValuesImpl />
 	</js:valuesImpl>
 	<js:initialView>
-		<js:View width="100%" height="100%" className="page-content">
+		<js:View>
 			<js:beads>
-				<js:VerticalLayout />
+				<js:HorizontalLayout />
 			</js:beads>
 			<local:ButtonPlayGround/>
 			<local:TextInputPlayGround/>
