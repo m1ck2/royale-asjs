@@ -30,7 +30,50 @@
 
 body {
   font: 100% "Lato-Bold", sans-serif;
-  color: #333;
+  color: red;
+}
+
+/**
+ * Jewel TextButton
+ */
+.textbutton, .textbutton:hover {
+  cursor: pointer;
+  /* Background: */
+  border: none;
+  border-radius: 3px;
+  /* TextField: */
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 0 #555;
+  padding: 10px 0px;
+  display: inline-block;
+  min-width: 80px;
+}
+
+.textbutton {
+  background-color: red;
+  transition-duration: 0.4s;
+}
+
+.textbutton:hover {
+  background-color: #3389EF;
+}
+
+.textbutton:active {
+  background-color: #0056BC;
+}
+
+.textbutton:focus {
+  outline: 0;
+}
+
+.textbutton[disabled] {
+  background-color: #CCCCCC;
+  color: #888888;
+  text-shadow: unset;
+  cursor: unset;
 }
 
 /*# sourceMappingURL=defaults.css.map */

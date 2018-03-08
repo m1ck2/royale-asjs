@@ -69,10 +69,6 @@
               <path>../src/main/resources/Button.css</path>
             </include-file>
             <include-file>
-              <name>TextButton.css</name>
-              <path>../src/main/resources/TextButton.css</path>
-            </include-file>
-            <include-file>
               <name>TextField.css</name>
               <path>../src/main/resources/TextField.css</path>
             </include-file>
