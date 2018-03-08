@@ -30,7 +30,27 @@
 
 body {
   font: 100% "Lato-Bold", sans-serif;
-  color: red;
+  color: #006CEB;
+}
+
+/**
+ * Jewel Button
+ */
+.button, .button:hover {
+  cursor: pointer;
+  /* Background: */
+  border: 1px;
+  border-image-source: url(assets/JewelButton2.svg);
+  border-image-slice: 4;
+  border-image-width: 4;
+  background-image: linear-gradient(#3BB0FF, #1E36FA);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+}
+
+.button:focus {
+  outline: 0;
 }
 
 /**
@@ -53,7 +73,7 @@ body {
 }
 
 .textbutton {
-  background-color: red;
+  background-color: #006CEB;
   transition-duration: 0.4s;
 }
 
@@ -74,6 +94,49 @@ body {
   color: #888888;
   text-shadow: unset;
   cursor: unset;
+}
+
+/**
+ * Jewel TextField
+ */
+TextField {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.vTextField--input {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  border: none;
+  border-bottom: 2px solid;
+  border-bottom-color: #ff0000;
+  display: block;
+  margin: 0;
+  padding: 4 0;
+  width: 100px;
+  background: transparent;
+  text-align: left;
+  color: inherit;
+  outline: none;
+}
+
+.vTextField--label {
+  bottom: 0;
+  color: #ff0000;
+  font-size: 13px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
 }
 
 /*# sourceMappingURL=defaults.css.map */

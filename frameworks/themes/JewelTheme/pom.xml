@@ -64,14 +64,6 @@
               <name>defaults.css</name>
               <path>../src/main/resources/defaults.css</path>
             </include-file>
-            <include-file>
-              <name>Button.css</name>
-              <path>../src/main/resources/Button.css</path>
-            </include-file>
-            <include-file>
-              <name>TextField.css</name>
-              <path>../src/main/resources/TextField.css</path>
-            </include-file>
           </includeFiles>
         </configuration>
       </plugin>
