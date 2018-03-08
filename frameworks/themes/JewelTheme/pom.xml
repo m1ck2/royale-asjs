@@ -87,9 +87,9 @@
           <resources>
               <resource>
                   <source>
-                      <directory>${basedir}/src/main/resources/sass</directory>
+                      <directory>${basedir}/src/main/sass</directory>
                       <includes>
-                          <include>**/*.scss</include>
+                          <include>**/*.sass</include>
                       </includes>
                   </source>
                   <destination>${basedir}/src/main/resources</destination>
