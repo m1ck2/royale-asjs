@@ -18,24 +18,26 @@
 ////////////////////////////////////////////////////////////////////////////////
 package org.apache.royale.jewel
 {
-    import org.apache.royale.html.TextButton;
-   
+    import org.apache.royale.core.ITextModel;
+
     COMPILE::JS
     {
         import org.apache.royale.core.WrappedHTMLElement;
         import org.apache.royale.html.util.addElementToWrapper;
     }
     
+    [DefaultProperty("text")]
+
     /**
-     *  The Button class provides a Jewel Design Library UI-like appearance for
-     *  a Button.
+     *  The TextButton class implements a basic button that
+     *  displays text and provides a Jewel Design Library UI-like appearance.
      *
      *  @langversion 3.0
      *  @playerversion Flash 10.2
      *  @playerversion AIR 2.6
      *  @productversion Royale 0.9.2
      */
-	public class TextButton extends org.apache.royale.html.TextButton
+	public class TextButton extends Button
 	{
         /**
          *  Constructor.
@@ -48,6 +50,78 @@ package org.apache.royale.jewel
 		public function TextButton()
 		{
 			super();
+		}
+        
+        /**
+         *  @copy org.apache.royale.html.Label#text
+         *
+         *  @langversion 3.0
+         *  @playerversion Flash 10.2
+         *  @playerversion AIR 2.6
+         *  @productversion Royale 0.0
+         */
+		public function get text():String
+		{
+            COMPILE::SWF
+            {
+                return ITextModel(model).text;
+            }
+            COMPILE::JS
+            {
+                return element.innerHTML;
+            }
+		}
+
+        /**
+         *  @private
+         */
+		public function set text(value:String):void
+		{
+            COMPILE::SWF
+            {
+                ITextModel(model).text = value;
+            }
+            COMPILE::JS
+            {
+                this.element.innerHTML = value;
+                this.dispatchEvent('textChange');
+            }
+		}
+
+        /**
+         *  @copy org.apache.royale.html.Label#html
+         *
+         *  @langversion 3.0
+         *  @playerversion Flash 10.2
+         *  @playerversion AIR 2.6
+         *  @productversion Royale 0.0
+         */
+		public function get html():String
+		{
+            COMPILE::SWF
+            {
+                return ITextModel(model).html;
+            }
+            COMPILE::JS
+            {
+                return element.innerHTML;
+            }
+		}
+
+        /**
+         *  @private
+         */
+		public function set html(value:String):void
+		{
+            COMPILE::SWF
+            {
+                ITextModel(model).html = value;
+            }
+            COMPILE::JS
+            {
+                this.element.innerHTML = value;
+                this.dispatchEvent('textChange');
+            }
 		}
         
         /**

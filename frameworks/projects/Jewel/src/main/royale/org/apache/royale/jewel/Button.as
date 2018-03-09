@@ -24,6 +24,7 @@ package org.apache.royale.jewel
     {
         import org.apache.royale.core.WrappedHTMLElement;
         import org.apache.royale.html.util.addElementToWrapper;
+        import org.apache.royale.core.CSSClassList;
     }
 
     /**
@@ -58,7 +59,15 @@ package org.apache.royale.jewel
 		public function Button()
 		{
 			super();
+
+            COMPILE::JS
+            {
+                _classList = new CSSClassList();
+            }
 		}
+
+        COMPILE::JS
+        protected var _classList:CSSClassList;
 
         /**
 		 * @private
@@ -72,5 +81,51 @@ package org.apache.royale.jewel
 			typeNames = "jewel button";
 			return element;
 		}
+
+
+        private var _primary:Boolean = false;
+
+        /**
+		 *  A boolean flag to activate "jewel-button--primary" effect selector.
+		 *  Applies primary color display effect.
+         *  Colors are defined in royale-jewel.css
+         *
+		 *  @langversion 3.0
+		 *  @playerversion Flash 10.2
+		 *  @playerversion AIR 2.6
+		 *  @productversion Royale 0.9.2
+		 */
+        public function get primary():Boolean
+        {
+            return _primary;
+        }
+
+        public function set primary(value:Boolean):void
+        {
+            if (_primary != value)
+            {
+                _primary = value;
+
+                COMPILE::JS
+                {
+                    addOrRemove("jewel-button--primary",value);
+                    setClassName(computeFinalClassNames());
+                }
+            }
+        }
+
+
+
+        COMPILE::JS
+        protected function addOrRemove(classNameVal:String,add:Boolean):void
+        {
+            add ? _classList.add(classNameVal) : _classList.remove(classNameVal);
+        }
+
+        COMPILE::JS
+        override protected function computeFinalClassNames():String
+        {
+            return _classList.compute() + super.computeFinalClassNames();
+        }
 	}
 }

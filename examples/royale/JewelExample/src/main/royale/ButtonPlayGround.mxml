@@ -39,18 +39,18 @@ limitations under the License.
 	<js:TextButton text="Basic"/>
 
 	<j:Button/>
-	<j:TextButton text="C"/>
+	<j:TextButton text="C" />
 
 	<j:TextButton text="Button"/>
 
-	<j:TextButton text="Button With More Text"/>
+	<j:TextButton text="Button With More Text" />
 
-	<j:TextButton text="Button" width="120" height="40"/>
+	<j:TextButton text="Button" width="120" height="40" />
 
 	
-	<j:TextButton text="Button"/>
+	<j:TextButton text="Button" primary="true"/>
 
-	<j:TextButton text="Disabled">
+	<j:TextButton text="Disabled" >
 		<j:beads>
 			<j:Disabled/>
 		</j:beads>
@@ -62,6 +62,6 @@ limitations under the License.
 	<j:Slider id="slider_v" width="250" value="440" minimum="50" maximum="500"
 				valueChange="onValueChange(event)"/>
 
-	<j:TextButton id="button" text="Button" width="420" height="440"/>
+	<j:TextButton id="button" text="Button" width="420" height="440" />
 
 </js:Group>

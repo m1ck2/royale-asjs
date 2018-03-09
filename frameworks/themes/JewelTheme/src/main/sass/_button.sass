@@ -16,28 +16,62 @@
 //  limitations under the License.
 //
 ////////////////////////////////////////////////////////////////////////////////
- 
+
 /**
  * Jewel Button
  */
-.button, .button:hover
-	
+%button-def
 	cursor: pointer
 	
+	display: inline-block
+	margin: 0 //1rem
+	padding: 10px 0px //.938em 1.875em
+	min-width: $button-min-width
+
 	/* Background: */
-	border: 1px // without this svg shows scaled and bigger
-	border-image-source: url(assets/JewelButton2.svg) 
-	border-image-slice: 4
-	border-image-width: 4
+	border: none // .094em solid 
+	border-radius: 3px //.625em
+	//box-shadow: 0 .375em .313em -.313em rgba(black,.8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black,.15)
 	
-	background-image: linear-gradient(#3BB0FF, #1E36FA)
-	background-size: cover
-	background-repeat: no-repeat
-	background-clip: padding-box
+	/* TextField */
+	color: $white
+	font:
+		family: $font-stack 
+		style: bold 
+		size: .7rem 
+	//+trans(0.2s ease-in-out)
+	text:
+		transform: uppercase
+		decoration: none 
+		//shadow: 0 .063em rgba(black,.3)
 
-//.button:hover
+.button
+	@extend %button-def
 
-//.button:active 
+.jewel-button--primary
+	+button-theme($primary-color)
 
-.button:focus
-	outline: 0
+
+
+
+	//SVGs
+	//border:1px; /*without this svg shows scaled and bigger*/
+	//border-image-source: url(assets/jewel-button.svg) ;
+	//border-image-slice: 4;
+	//border-image-width: 4;
+	
+	//background-image: linear-gradient(#3BB0FF, #1E36FA);
+
+	//background-color: #006CEB;
+	//background-size: cover;
+	//background-repeat: no-repeat;
+	//background-clip: padding-box;
+
+	//background: url(assets/4slicewithpattern.svg);
+	//background-size: cover;
+	//width: fit-content;
+	//height: fit-content;
+
+//.button:active	
+	//box-shadow: #E6431D 0 1px 0 inset;
+	//text-shadow: 0 -1px 0 #5F3A29;
